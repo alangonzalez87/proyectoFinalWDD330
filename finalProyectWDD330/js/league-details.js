@@ -23,12 +23,12 @@ async function fetchLeagueDetails() {
     const data = await response.json();
     console.log("Datos de la liga:", data);
 
-    // Mostrar los detalles
+    
     const league = data.response[0];
     document.getElementById("season").textContent = `Temporada: ${league.season}`;
 
-    // Mostrar jugadores destacados (si la API proporciona esta información)
-    const topPlayers = league.top_scorers; // Ajusta según cómo estén los datos
+    
+    const topPlayers = league.top_scorers; 
     const topPlayersList = document.getElementById("top-players");
     topPlayersList.innerHTML = "";
     topPlayers.forEach(player => {
@@ -37,9 +37,9 @@ async function fetchLeagueDetails() {
       topPlayersList.appendChild(playerItem);
     });
 
-    // Mostrar la tabla de la temporada
+   
     const tableBody = document.getElementById("score-table").querySelector("tbody");
-    tableBody.innerHTML = ""; // Limpiar tabla antes de agregar los datos
+    tableBody.innerHTML = ""; 
     league.standings[0].forEach((team, index) => {
       const row = document.createElement("tr");
       row.innerHTML = `
