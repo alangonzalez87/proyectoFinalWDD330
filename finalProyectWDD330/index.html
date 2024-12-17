@@ -9,23 +9,26 @@
   <link rel="stylesheet" href="src/style.css">
   <script type="module" src="/js/main.js"></script>
   <body>
-    <header><img src="" alt="aqui va una imagen">
-      <nav>
-        <ul>
+    <div id="app">
+    <header class="header"> 
+      <div class="logo">
+        <img src="img/4a65f836925e4e54b695e28bbf61dd7f.webp" alt="aqui va una imagen">
+      </div>
+      <nav >
+        <ul class="nav-links">
             <li> <a href="/leagues/leagues.html">Leagues</a></li>
-            <li>scores</li>
-            <li>players</li>
+            <li> <a href="#">Scores</a></li>
+            <li><a href="#">Players</a></li>
         </ul>
-        <button>login</button>
+        <button>Login</button>
       </nav>
     </header>
-    <div id="app">
+    
       <form id="searchForm">
         <input type="text" id="searchInput" placeholder="Busca un equipo o jugador" />
         <button type="submit">Buscar</button>
       </form>
       <div id="results"></div>
     </div>
-    
   </body>
 </html>
