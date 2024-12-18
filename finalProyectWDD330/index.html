@@ -6,26 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyect Final </title>
   </head>
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="/src/utils/style.css">
   <script type="module" src="/js/main.js"></script>
+  
   <body>
-    <header><img src="" alt="aqui va una imagen">
-      <nav>
-        <ul>
-            <li> <a href="/leagues/leagues.html">Leagues</a></li>
-            <li>scores</li>
-            <li>players</li>
-        </ul>
-        <button>login</button>
-      </nav>
-    </header>
     <div id="app">
+   <header class="divider" id="main-header"></header>
+    
       <form id="searchForm">
         <input type="text" id="searchInput" placeholder="Busca un equipo o jugador" />
         <button type="submit">Buscar</button>
       </form>
       <div id="results"></div>
     </div>
-    
+    <footer id="main-footer"></footer>
   </body>
 </html>
