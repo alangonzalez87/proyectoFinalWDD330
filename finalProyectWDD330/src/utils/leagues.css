@@ -1,0 +1,59 @@
+
+#leagues {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    max-height: calc(100vh - 150px); 
+    overflow-y: auto; 
+  }
+  
+ 
+  .league-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .league-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .league-logo {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+#league-details h1,
+#league-details h2,
+#league-details h3 {
+  grid-column: span 3; 
+  text-align: center;
+  margin: 10px 0;
+  color: #111; 
+}
+  
+ 
+  .league-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .league-name:hover {
+    color: #007bff; 
+  }
+  

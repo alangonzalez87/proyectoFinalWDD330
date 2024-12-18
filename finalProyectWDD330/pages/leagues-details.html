@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detalles de la Liga</title>
+  <link rel="stylesheet" href="../src/utils/style.css">
+  <link rel="stylesheet" href="../src/utils/details.css">
   
 </head>
 <body>
-  <h1>Detalles de la Liga</h1>
+  <div id="app">
+    <header class="divider" id="main-header"></header>
+    <h1>Detalles de la Liga</h1>
   <div id="league-details">
     <h2>Nombre de la Liga</h2>
     <p id="season"></p>
@@ -23,6 +27,7 @@
           <th>Equipo</th>
           <th>Partidos</th>
           <th>Goles</th>
+          <th>Puntos</th>
         </tr>
       </thead>
       <tbody>
@@ -30,7 +35,9 @@
       </tbody>
     </table>
   </div>
-
+  <footer id="main-footer"></footer>
+  </div>
+  <script type="module" src="/js/main.js"></script>
   <script src="../js/league-details.js"></script>
 </body>
 </html>
